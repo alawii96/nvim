@@ -16,7 +16,6 @@ local config = {
     rename_notification = true,
     -- Enable non-default servers, use default lsp config
     -- Check here for configs that will be used by default: https://github.com/williamboman/nvim-lsp-installer/tree/main/lua/nvim-lsp-installer/servers
-
     -- lsp servers that should be installed
     ensure_installed = {
       'rust_analyzer',
@@ -26,7 +25,6 @@ local config = {
     servers = {
       -- Enable rust_analyzer
       rust_analyzer = true,
-
       -- Enable tsserver w/custom settings
       tsserver = {
         -- Disable formatting (defaults to true)
@@ -126,6 +124,7 @@ local config = {
 
   -- Add additional plugins (lazy.nvim)
   add_plugins = {
+    'simrat39/rust-tools.nvim',
     'ggandor/lightspeed.nvim',
     {
       'romgrk/barbar.nvim',
